@@ -1,0 +1,18 @@
+<div class="download_container flex">
+    <div *ngFor="let ar of fetchArtifactDetails">
+        <mat-card class="artifact_card">
+            <mat-card-title> {{ar.deviceName}} </mat-card-title>
+            <mat-card-subtitle> Version : {{ar.buildVersion}} </mat-card-subtitle>
+            <mat-card-subtitle> Maintainer : {{ar.maintainer}} </mat-card-subtitle>
+            <button mat-icon-button class="save_btn"> 
+                <a href="{{ar.downloadLink}}"> <mat-icon>download</mat-icon> </a>
+            </button>
+            <!-- <mat-card-actions>
+                <button mat-icon-button class="save_btn"> 
+                    <a href="{{ar.downloadLink}}"> <mat-icon>download</mat-icon> </a>
+                </button>
+            </mat-card-actions> -->
+        </mat-card>
+    </div>
+</div>
+<br><br>

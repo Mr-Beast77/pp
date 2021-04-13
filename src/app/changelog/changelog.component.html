@@ -1,0 +1,13 @@
+<div class="changelog_container">
+    <p class="changelog_label">PixelPlusUI - All Version Update Changelogs </p>
+    <mat-accordion *ngFor="let ch of changeLogDetails"> 
+        <mat-expansion-panel class="expansion_container">
+            <mat-expansion-panel-header class="expansion_header">
+            <mat-panel-title> {{ch.versionNo}} </mat-panel-title>
+            </mat-expansion-panel-header>
+             <mat-list role="list" *ngFor="let desc of ch.versionDetails">
+            <mat-list-item role="versionDesc"> <mat-icon class="star">star_outline</mat-icon> {{desc}} </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>

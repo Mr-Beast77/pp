@@ -1,0 +1,98 @@
+<div class="home_container">
+    <div class="left_panel">
+        <p class="para_one">Another custom ROM, <br> and we like it.</p> <br>
+        <p class="para_two">PixelPlusUI is a PE based ROM with some more friendly user experience. What different in this? you ask? LET'S FIND OUT. <br><br>
+            It has a beautilful UI/UX while preserving the stock Android look by adhering to Material Design guidelines and offers great performance and stability with many awesome features and user security. But this doesn't mean our aim is to provide all the customisation available on the planet. Unlike OEMs' slow and untimely updates, we closely follow Google to bring the latest updates to our users.
+        </p>
+    </div>
+    <div class="right_panel">
+        <img src="./assets/images/home.png" alt="Smartphone">
+    </div>
+</div>
+                        <!-- Application Features -->
+<div class="features_container">
+    <p class="feature_label">Astonishing Features</p>
+    <div class="flex">
+        <div *ngFor="let feat of allFeatures">
+            <mat-card class="feature_card">
+                <mat-card-title>{{feat.title}}</mat-card-title>
+                <mat-card-subtitle>{{feat.desc}}</mat-card-subtitle>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+                        <!-- Team Container -->
+<div class="team_container">
+    <p class="team_label">Our Team</p>
+    <div class="flex">
+        <mat-card class="team_card">
+            <img src="./assets/images/avatar_one.png" alt="Avatar" class="avatar">
+            <mat-card-header>
+                <mat-card-title> KostyaJRZ </mat-card-title>
+                <mat-card-subtitle>Founder/Lead Developer</mat-card-subtitle>
+            </mat-card-header>
+            <a href="https://t.me/kostyajrz"><img src="./assets/images/telegram.png" alt="telegram" class="telegram_icon"></a>
+            <a href="https://github.com/KostyaJRZ"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
+        </mat-card>
+        <mat-card class="team_card">
+            <img src="./assets/images/avatar_two.jpg" alt="Avatar" class="avatar">
+            <mat-card-header>
+                <mat-card-title> Saurav </mat-card-title>
+                <mat-card-subtitle> Core Developer </mat-card-subtitle>
+            </mat-card-header>
+            <a href="https://t.me/ugly_kid_af"><img src="./assets/images/telegram.png" alt="telegram" class="telegram_icon"></a>
+            <a href="https://github.com/ugly-kid-af"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
+        </mat-card>
+        <mat-card class="team_card">
+            <img src="./assets/images/avatar_three.jpg" alt="Avatar" class="avatar">
+            <mat-card-header>
+                <mat-card-title> Smokey </mat-card-title>
+                <mat-card-subtitle> Developer </mat-card-subtitle>
+            </mat-card-header>
+            <a href="https://t.me/smokey_18"><img src="./assets/images/telegram.png" alt="telegram" class="telegram_icon"></a>
+            <a href="https://github.com/smokey18"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
+        </mat-card>
+        <mat-card class="team_card">
+            <img src="./assets/images/avatar_four.png" alt="Avatar" class="avatar">
+            <mat-card-header>
+                <mat-card-title> Rahul Mishra </mat-card-title>
+                <mat-card-subtitle> UI/UX Developer </mat-card-subtitle>
+            </mat-card-header>
+            <a href="https://t.me/beingmishra"><img src="./assets/images/telegram.png" alt="telegram" class="telegram_icon"></a>
+            <a href="https://github.com/beingmishra"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
+        </mat-card>
+        <mat-card class="team_card">
+            <img src="./assets/images/avatar_five.jpg" alt="Avatar" class="avatar">
+            <mat-card-header>
+                <mat-card-title> Virendra Carpenter </mat-card-title>
+                <mat-card-subtitle> Graphics Designer </mat-card-subtitle>
+            </mat-card-header>
+            <a href="https://t.me/VCARP"><img src="./assets/images/telegram.png" alt="telegram" class="telegram_icon"></a>
+            <a href="https://github.com/virendracarpenter"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
+        </mat-card>
+        <mat-card class="team_card">
+            <img src="./assets/images/avatar_six.png" alt="Avatar" class="avatar">
+            <mat-card-header>
+                <mat-card-title> Pixie </mat-card-title>
+                <mat-card-subtitle> UI Developer </mat-card-subtitle>
+            </mat-card-header>
+            <a href="https://t.me/pixiecodes"><img src="./assets/images/telegram.png" alt="telegram" class="telegram_icon"></a>
+            <a href="https://github.com/pixie-codes"><img src="./assets/images/git.svg" alt="git" class="git_icon"></a>
+        </mat-card>
+    </div>
+</div>
+                    <!-- Download & Donate -->
+<div class="download_donate_container">
+    <p class="download_donate_label">Download / Donate Here</p>
+    <div class="flex">
+        <mat-card class="download_card">
+            <mat-card-subtitle>Ready for an wholesome experience? Great, go ahead and grab our builds for your device. You won't regret it!        </mat-card-subtitle>
+            <button mat-flat-button class="download_btn" (click)="goToDownload()">Download</button>
+        </mat-card>
+        <mat-card class="donate_card">
+            <mat-card-subtitle>If you have liked our work and want to support us, then please consider donating for servers by clicking below </mat-card-subtitle>
+            <button mat-flat-button class="donate_btn" (click)="goToDonate()">Donate</button>
+        </mat-card>
+    </div>
+</div>

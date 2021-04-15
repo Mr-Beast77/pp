@@ -21,14 +21,40 @@
     margin-bottom: 0.75rem; 
     font-size: 1rem; 
 }
-.save_btn{ 
-  background-color: white;     
+ul{ 
   position: absolute;
-  bottom: 1rem;
-  right: 6rem;
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding: 0;
+  bottom: 0;
+  left: 50%;
 }
-.save_btn a{ color: #db2020; }
-.save_btn mat-icon{ margin-top: 0.5rem; }
+ul li{ list-style: none;}
+ul a{
+  color: #db2020;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg,#ddd,#fff);
+  transition: .5s;
+}
+ul a:hover{ box-shadow: 0 2px 5px rgba(0,0,0,0.3); text-decoration: none;}
+ul a mat-icon{ 
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg,#fff,#ddd);
+  border-radius: 50%;
+  line-height: calc(45px - 12px);;
+  transition: .5s;
+}
 
 @keyframes gradient {
     0% {

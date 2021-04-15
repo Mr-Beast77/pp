@@ -1,5 +1,5 @@
 /*
-** @author tulika-ghosh
+** @author pixie-codes
 ** Home page - Features - Team - Download & Donate
 */
 import { Component, OnInit } from '@angular/core';

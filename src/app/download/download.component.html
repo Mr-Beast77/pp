@@ -4,14 +4,9 @@
             <mat-card-title> {{ar.deviceName}} </mat-card-title>
             <mat-card-subtitle> Version : {{ar.buildVersion}} </mat-card-subtitle>
             <mat-card-subtitle> Maintainer : {{ar.maintainer}} </mat-card-subtitle>
-            <button mat-icon-button class="save_btn"> 
-                <a href="{{ar.downloadLink}}"> <mat-icon>download</mat-icon> </a>
-            </button>
-            <!-- <mat-card-actions>
-                <button mat-icon-button class="save_btn"> 
-                    <a href="{{ar.downloadLink}}"> <mat-icon>download</mat-icon> </a>
-                </button>
-            </mat-card-actions> -->
+            <ul class="save_btn"> 
+                <li><a href="{{ar.downloadLink}}"> <mat-icon>download</mat-icon></a></li>
+            </ul>
         </mat-card>
     </div>
 </div>

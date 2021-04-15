@@ -100,7 +100,6 @@
             "assets": [
               "src/assets",
               "src/favicon.ico"
-              
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -133,6 +132,10 @@
               "devServerTarget": "pixel-plus:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

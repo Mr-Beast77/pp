@@ -1,3 +1,7 @@
+/*
+** @author pixie-codes
+** Download page - download based on device
+*/
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../shared.service';
 import { Download } from './download';

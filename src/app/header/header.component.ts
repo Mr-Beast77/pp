@@ -1,5 +1,5 @@
 /*
-** @author tulika-ghosh
+** @author pixie-codes
 ** Header - website logo - route links to other views 
 */
 import { Component, OnInit } from '@angular/core';

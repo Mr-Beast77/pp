@@ -1,5 +1,5 @@
 /*
-** @author tulika-ghosh
+** @author pixie-codes
 ** Gallery - carousel with screen-shots
 */
 import { Component, OnInit } from '@angular/core';

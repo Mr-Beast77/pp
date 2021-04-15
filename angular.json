@@ -134,8 +134,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/pixel-plus",
+            "netlifyToken": "",
+            "siteId": ""
+          }
         }
       }
     }

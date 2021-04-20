@@ -1,23 +1,22 @@
 name: Build Page
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   Build_Page:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install Packages
-      run: |
-            ls
-            #     echo n | sudo npm install -g @angular/cli@latest
-            #echo n | sudo npm install --save-dev @angular-devkit/build-angular
     - name: Build Page
       run: |
-            pwd
-            ls
-            #ng build --prod --output-path docs --base-href https://pixie-codes.github.io/pixelplusui/
-            # cp docs/index.html docs/404.html
+            echo n | sudo npm install -g @angular/cli@latest
+    - name: Build Page 2
+      run: |
+            echo n | sudo npm install --save-dev @angular-devkit/build-angular
+    - name: Build Page 3
+      run: |
+            ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/
     - name: Push Changes
       run: |
             pwd

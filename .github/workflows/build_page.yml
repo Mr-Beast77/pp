@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  Build_page:
+  Build_Page:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -14,10 +14,12 @@ jobs:
             echo n | sudo npm install --save-dev @angular-devkit/build-angular
     - name: Build page
       run: |
+            pwd
             ng build --prod --output-path docs --base-href https://pixie-codes.github.io/pixelplusui/
             cp docs/index.html docs/404.html
     - name: Push changes
       run: |
+            pwd
             git config --global user.email "khalakuzzamanapon5@gmail.com"
             git config --global user.name "Apon77"
             git add .

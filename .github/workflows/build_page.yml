@@ -15,12 +15,12 @@ jobs:
             echo n | sudo npm install --save-dev @angular-devkit/build-angular
     - name: Build Page
       run: |
-            ng build --prod --output-path docs --base-href https://apon7.github.io/pixelplusui/
+              ng build --prod --output-path docs --base-href https://pixie-codes.github.io/pixelplusui/
             cp docs/index.html docs/404.html
     - name: Update Site
       run: |
             git config --global user.name "Apon77"
             git config --global user.email "khalakuzzamanapon5@gmail.com"
             git add .
-            git commit -m "Update site"
+            git commit -m "Update Site"
             git push

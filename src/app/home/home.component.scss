@@ -5,45 +5,75 @@
 }
 .left_panel, .right_panel{
     width: 50%;
-    margin-left: 10rem;
     text-align: center;
 }
 .left_panel .para_one{ 
     font-weight: 500;
-    line-height: 1.5;
     color: #ec2020;
-    font-size: xxx-large; 
-    margin-top: 35px;
 }
-.left_panel .para_two{
-    font-size: large; 
-    line-height: 2;
+.left_panel .para_two{ line-height: 2; }
+.right_panel img{ margin-top: 50px; }
+
+@media only screen and (min-width: 992px){
+    .right_panel{ margin-left: 7rem; }
+    .left_panel .para_one{
+        font-size: 2.5rem;
+        width: 41rem;
+        margin-top: 6rem;
+        margin-left: 5rem ;
+    }
+    .left_panel .para_two{ 
+        font-size: large; 
+        width: 32rem; 
+        margin-left: 10rem ;
+    }
+    .right_panel img{ width: 250px; }
 }
-.right_panel img{
-    margin-top: 50px;
-    width: 250px;
+
+@media only screen and (max-width: 600px){
+    .left_panel, .right_panel{ margin-left: 2rem;  }
+    .left_panel .para_one{
+        line-height: 1.30;
+        font-size: x-large; 
+        margin-top: 3rem;
+    }
+    .left_panel .para_two{  font-size: smaller; }
+    .right_panel img{ width: 200px; }
 }
+
                     // Features container
-.features_container{ margin: 3rem 13rem; }
 .feature_card{
     margin: 1rem;
-    width: 17rem;
     height: 13rem;
-    line-height: 1.5;
     border-radius: 25px;
-    background-color: #e0594d;
-}
-.feature_card, .feature_card mat-card-subtitle{
-    color: white; 
     text-align: center;
+    background-color: white;
+}
+.feature_card mat-card-title{
+    margin-bottom: 12px;
+    color: #e0594d;
+}
+.feature_card mat-card-subtitle{
+    color: black; 
     font-size: medium;
+}
+@media only screen and (min-width: 992px){
+    .features_container{ margin: 3rem 13rem; }
+    .feature_card{
+        width: 17rem;
+        line-height: 1.5;
+    }
+}
+@media only screen and (max-width: 600px){
+    .features_container{ margin: 3rem 1rem; }
+    .feature_card{
+        width: 15rem;
+        line-height: 1.30;
+    }
 }
 
                     // Team container
-.team_container{ margin: 3rem 12rem; }
 .team_card{
-    width: 16rem;
-    margin: 15px 20px;
     text-align: center;
     border-radius: 25px;
 }
@@ -63,33 +93,64 @@
 }
 .git_icon{ height: 30px; }
 
+@media only screen and (min-width: 992px){
+    .team_container{ margin: 3rem 13.7rem; }
+    .team_card{
+        width: 16rem;
+        margin: 15px 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .team_container{ margin: 3rem 1rem; }
+    .team_card{
+        width: 14rem;
+        margin: 15px 22px;
+    }
+}
                 // Download and Donate container
-.download_donate_container{ margin: 4rem 20rem;}
 .download_card, .donate_card{
-    margin: 2rem 0 5rem 0;
-    width: 21rem;
     height: 17rem;
     padding: 30px;
     text-align: center;
     line-height: 1.5;
     border-radius: 40px;
+    background-color: #fff;
 }
-.download_card{ background-color: #efb820;; }
-.donate_card{ background-color: #3cba54; margin-left: 2rem; }
 .download_card mat-card-subtitle, .donate_card mat-card-subtitle{ 
     font-size:large;
     color: black;
 }
 .download_btn, .donate_btn{ 
-    background-color: black; 
-    font-size: x-large;
+    background-color: #da2828; 
     border-radius: 40px;
-    height: 5rem;
-    width: 15rem;
-    margin-top: 1rem;
 }
-.download_btn, .donate_btn{ color: #ec2020;}
+.download_btn, .donate_btn{ color: #fff;}
 
+@media only screen and (min-width: 992px){
+    .download_donate_container{ margin: 4rem 17rem;}
+    .download_card, .donate_card{ 
+        margin: 2rem 3rem 0 0;
+        width: 21rem;
+    }
+    .download_btn, .donate_btn{ 
+        font-size: x-large;
+        height: 5rem;
+        width: 15rem;
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .download_donate_container{ margin: 3rem 2rem;}
+    .download_card, .donate_card{ 
+        margin: 2rem 1rem 0 0;
+        width: 15rem;
+     }
+    .download_btn, .donate_btn{
+        font-size: medium;
+        height: 3rem;
+        width: 8rem;
+     }
+}
                     // Shared
 .feature_label, .team_label, .download_donate_label{
     text-transform: uppercase;

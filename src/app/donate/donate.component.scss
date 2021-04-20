@@ -1,24 +1,35 @@
-.donate_container{ 
-    margin: 4rem 10rem;
-    text-align: center;
-}
+.donate_container{ text-align: center; }
 .label{ 
     color: #ec2020;
     font-size: xx-large;
     font-weight: 500;
     text-transform: uppercase;
 }
-.donate_container mat-card{
-    width: 17rem;
-    border-radius: 2rem;
-    margin: 4rem 2rem 2rem 2rem;
-}
-.donate_container img{
-    height: 10rem;
-    width: 10rem;
-}
+.donate_container mat-card{ border-radius: 2rem; }
 .donate_container mat-card-subtitle{ 
     color: black;
     font-weight: 500;
     font-size: 0.95rem;
+}
+@media only screen and (min-width: 992px){
+    .donate_container{ margin: 4rem 10rem; }
+    .donate_container mat-card{
+        width: 17rem;
+        margin: 4rem 2rem 2rem 2rem;
+    }
+    .donate_container img{
+        height: 10rem;
+        width: 10rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .donate_container{ margin: 4rem; }
+    .donate_container mat-card {
+        width: 28rem;
+        margin: 1rem 0;
+    }
+    .donate_container img{
+        height: 8rem;
+        width: 8rem;
+    }
 }

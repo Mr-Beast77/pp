@@ -1,13 +1,32 @@
-<mat-toolbar class="header">
-    <img src="./assets/images/pixelpluslogo.png" alt="Pixel Plus Logo">
-    <span class="filler"></span>
-    <span class="route_items">
-      <span (click)="goToHome()">Home</span>
-      <span (click)="goToDownload()">Download</span>
-      <span (click)="goToChangeLog()">Changelogs</span>
-      <span (click)="goToDonate()">Donate</span>
-      <span (click)="goToGallery()" >Gallery</span>
-      <span (click)="goToContact()">Contact Us</span>
-      <a href="https://github.com/PixelPlusUI-Elle">Github</a>
-    </span>
-</mat-toolbar>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <img src="./assets/images/pixelpluslogo.png" alt="Pixel Plus Logo" class="navbar-brand">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentLG" aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContentLG">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" (click)="goToHome()"> Home </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" (click)="goToDownload()"> Download </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToChangeLog()"> Changelogs </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToDonate()"> Donate </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToGallery()"> Gallery </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToContact()"> Contact </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/PixelPlusUI-Elle"> Github </a>
+        </li>
+      </ul>
+  </div>
+</nav>

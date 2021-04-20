@@ -9,10 +9,6 @@
     text-align: center;
     margin: 2rem;
 }
-.expansion_container{ 
-    margin: 2rem 22rem; 
-    width: 50%;
-}
 .expansion_header, .expansion_header:hover{
     height: 4rem;
     background: rgb(204,66,69) !important;
@@ -30,4 +26,14 @@
     line-height: 1.5;
     height: 2rem;
     color: white;
+}
+
+@media only screen and (min-width: 992px){
+    .expansion_container{
+        margin: 2rem 22rem; 
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .expansion_container{ margin: 2rem 2rem; }
 }

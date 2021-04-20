@@ -1,18 +1,29 @@
-.header{ 
-    background-color: #0a0a0a;
-    height: 80px; 
+.navbar-brand{ height: 50px; }
+.nav-item {
+    border-radius: 0.5rem;
+            transition: background 0.2s ease-in-out;
 }
-.header img{ 
-    height: 50px; 
-    margin-left: 4rem; 
+
+.nav-item .nav-link{
+    color: #ec2020 !important;
+    cursor: pointer; 
 }
-.route_items{ margin-right: 6rem; }
-.route_items span, .route_items a{
+
+@media only screen and (min-width: 992px){
+        .navbar-brand{ margin-left: 4rem; }
+        .nav-item {
+            font-size: x-large;
+            font-weight: 550;
+            letter-spacing: 0.1rem;
+            margin: 0 1.75rem;
+        }
+    }
+.nav-item:hover{
+    background-color: rgba(255,255,255,0.2);
     color: #ec2020;
-    cursor: pointer;
-    font-weight: 550;
-    margin: 0 2rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    text-decoration: none;
+}
+.nav-item:active{
+    background-color: white;
+    color: #ec2020;
+    font-weight: 600;
 }

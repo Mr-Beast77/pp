@@ -9,12 +9,12 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'home', pathMatch: 'full'},
-  { path:'changelog', component: ChangelogComponent },
-  { path:'contact', component: ContactComponent },
-  { path: 'donate', component: DonateComponent },
-  { path:'download',component: DownloadComponent },
-  { path:'gallery', component: GalleryComponent},
-  { path:'home', component: HomeComponent }
+  { path:'changelog', component: ChangelogComponent, pathMatch: 'full'},
+  { path:'contact', component: ContactComponent, pathMatch: 'full' },
+  { path: 'donate', component: DonateComponent, pathMatch: 'full' },
+  { path:'download',component: DownloadComponent,pathMatch: 'full' },
+  { path:'gallery', component: GalleryComponent, pathMatch: 'full'},
+  { path:'home', component: HomeComponent, pathMatch: 'full' }
 ];
 
 @NgModule({

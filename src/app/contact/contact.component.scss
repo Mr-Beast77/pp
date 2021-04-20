@@ -1,14 +1,15 @@
-.contact_container{
-  padding-top: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact_label{ 
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  padding-top: 3rem;
 }
 .telegram_card, .email_card{
-    margin: 0 2rem;
-    padding: 3rem;
     text-align: center;
     border-radius: 40px;
+    background-color: #e0594d;
     color: white;
 }
 .telegram_card mat-card-subtitle, .email_card mat-card-subtitle,
@@ -21,19 +22,26 @@
     text-decoration: none;
     cursor: pointer;
 }
-.telegram_card , .email_card{
-    background: linear-gradient(-45deg, #db2020, #4285f4);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
- }
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+
+@media only screen and (min-width: 992px){
+  .contact_card{ 
+    display: flex;
+    margin: 4rem 9rem;
+  }
+
+  .telegram_card, .email_card{
+    padding: 3rem;
+    margin: 0 2rem;
+  }
+}
+@media only screen and (max-width: 600px){
+  .contact_card{ 
+    margin: 2rem 1rem;
+  }
+  .telegram_card, .email_card{
+    padding: 1rem;
+    margin: 1rem 2.5rem;
+    height: 10rem;
+    width: 30rem;
+  }
 }

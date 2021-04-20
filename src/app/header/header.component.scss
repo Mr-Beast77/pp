@@ -1,12 +1,22 @@
 .navbar-brand{ height: 50px; }
 .nav-item {
     border-radius: 0.5rem;
-            transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 
 .nav-item .nav-link{
     color: #ec2020 !important;
     cursor: pointer; 
+}
+
+.nav-item:hover{
+    background-color: rgba(255,255,255,0.2);
+    color: #ec2020;
+}
+.nav-item:active{
+    background-color: white;
+    color: #ec2020;
+    font-weight: 600;
 }
 
 @media only screen and (min-width: 992px){
@@ -18,12 +28,6 @@
             margin: 0 1.75rem;
         }
     }
-.nav-item:hover{
-    background-color: rgba(255,255,255,0.2);
-    color: #ec2020;
-}
-.nav-item:active{
-    background-color: white;
-    color: #ec2020;
-    font-weight: 600;
+@media only screen and (max-width: 600px){
+    .nav-item .nav-link{ text-align: center; }
 }

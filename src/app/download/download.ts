@@ -1,6 +1,5 @@
 export class Download{
     deviceCategory: string = '';
-    downloadLink: string = '';
     deviceDetails : DeviceDetails[] = []
 }
 

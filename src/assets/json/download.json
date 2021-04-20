@@ -1,7 +1,6 @@
 [
 	{
 		"deviceCategory" : "Xiaomi (Redmi Series)",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
 		"deviceDetails" :   [{
 								"deviceName" : "Redmi 3s (land)",
 								"buildVersion" : "v3.4",
@@ -75,8 +74,7 @@
 							]
 	},
 	{
-		"deviceCategory" : "Xiaomi (Poco Series)",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
+		"deviceCategory" : "Xiaomi (Poco Series)",	
 		"deviceDetails" :   [
 							{
 							"deviceName" : "Xiaomi Poco F1 (beryllium)",
@@ -101,8 +99,7 @@
 							]
 	},
 	{
-		"deviceCategory" : "Xiaomi (Mi Series)",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
+		"deviceCategory" : "Xiaomi (Mi Series)",	
 		"deviceDetails" :   [{
 								"deviceName" : "Xiaomi Mi A1 (tissot)",
 								"buildVersion" : "v3.4",
@@ -122,7 +119,6 @@
 	},
 	{
 		"deviceCategory" : "Lenovo Devices",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
 		"deviceDetails" :  [{
 								"deviceName" : "Lenovo Z5s (jd2019)",
 								"buildVersion" : "v3.4",
@@ -131,7 +127,6 @@
 	},
 	{
 		"deviceCategory" : "OnePlus Devices",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
 		"deviceDetails" :   [{
 								"deviceName" : "OnePlus 3/3T (oneplus3)",
 								"buildVersion" : "v3.4",
@@ -140,7 +135,6 @@
 	},
 	{
 		"deviceCategory" : "Realme Devices",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
 		"deviceDetails" :   [{
 								"deviceName" : "Realme 1  (CPH1859/61)",
 								"buildVersion" : "v3.4",
@@ -179,8 +173,7 @@
 							]
 	},
 	{
-		"deviceCategory" : "Moto Devices",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
+		"deviceCategory" : "Moto Devices",	
 		"deviceDetails" :   [{
 								"deviceName" : "Moto G5 Plus (potter)",
 								"buildVersion" : "v3.4",
@@ -195,7 +188,6 @@
 	},
 	{
 		"deviceCategory" : "Meizu Devices",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
 		"deviceDetails" :   [{
 								"deviceName" : "Meizu x8 (m1852)",
 								"buildVersion" : "v3.4",
@@ -203,7 +195,6 @@
 							}]
 	},{
 		"deviceCategory" : "Asus Devices",
-		"downloadLink" : "https://www.pling.com/p/1499070/#files-panel",
 		"deviceDetails" :   [{
 								"deviceName" : "Asus Zenfone Max Pro M1 (X00TD)",
 								"buildVersion" : "v3.4",

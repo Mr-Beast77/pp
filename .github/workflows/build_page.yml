@@ -16,7 +16,7 @@ jobs:
       run: |
             ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/
             cp docs/index.html docs/404.html
-    - name: Push Changes
+    - name: Updating Site
       run: |
             git config --global user.name "Apon77"
             git config --global user.email "khalakuzzamanapon5@gmail.com"

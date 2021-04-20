@@ -1,0 +1,26 @@
+name: Build Page
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  Build_Page:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Page
+      run: |
+            echo n | sudo npm install -g @angular/cli@latest
+    - name: Build Page 2
+      run: |
+            echo n | sudo npm install --save-dev @angular-devkit/build-angular
+    - name: Build Page 3
+      run: |
+            ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/
+    - name: Push Changes
+      run: |
+            git config --global user.email "khalakuzzamanapon5@gmail.com"
+            git config --global user.name "Apon77"
+            git add .
+            git commit -m "Updating site"
+            git push

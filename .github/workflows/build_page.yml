@@ -10,12 +10,12 @@ jobs:
     - name: Install Packages
       run: |
             pwd
-            echo n | sudo npm install -g @angular/cli@latest
-            echo n | sudo npm install --save-dev @angular-devkit/build-angular
+            #     echo n | sudo npm install -g @angular/cli@latest
+            #echo n | sudo npm install --save-dev @angular-devkit/build-angular
     - name: Build Page
       run: |
             pwd
-            ng build --prod --output-path docs --base-href https://pixie-codes.github.io/pixelplusui/
+            #ng build --prod --output-path docs --base-href https://pixie-codes.github.io/pixelplusui/
             cp docs/index.html docs/404.html
     - name: Push Changes
       run: |

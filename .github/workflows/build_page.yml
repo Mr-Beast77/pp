@@ -7,7 +7,7 @@ jobs:
   Build_Page:
     runs-on: ubuntu-latest
     steps:
-    - name: Cloning Repository
+    - name: Clone Repository
       uses: actions/checkout@v2
     - name: Install Packages
       run: |
@@ -17,10 +17,10 @@ jobs:
       run: |
             ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/
             cp docs/index.html docs/404.html
-    - name: Updating Site
+    - name: Update Site
       run: |
             git config --global user.name "Apon77"
             git config --global user.email "khalakuzzamanapon5@gmail.com"
             git add .
-            git commit -m "Updating site"
+            git commit -m "Update site"
             git push

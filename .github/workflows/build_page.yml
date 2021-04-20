@@ -3,12 +3,13 @@ on:
   push:
 
 jobs:
-  build:
+  Build page:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Install packages
       run: |
+            pwd
             echo n | sudo npm install -g @angular/cli@latest
             echo n | sudo npm install --save-dev @angular-devkit/build-angular
     - name: Build page

@@ -11,3 +11,7 @@ jobs:
       run: |
             echo testing
             echo hello
+    - name: Build page 2
+      run: |
+            echo testing
+            echo hello

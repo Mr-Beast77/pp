@@ -1,0 +1,27 @@
+    1  ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/
+    2  echo n | sudo npm install -g @angular/cli@latest
+    3  ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/ 
+    4  git clone https://github.com/pixie-codes/pixelplusui
+    5  cd pixelplusui/
+    6  ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/ 
+    7  echo n | sudo npm install --save-dev @angular-devkit/build-angular
+    8  ng build --prod --output-path docs --base-href https://apon77.github.io/pixelplusui/
+    9  git status\
+   10  git status
+   11  cp docs/index.html docs/404.html
+   12  git status
+   13  git add .
+   14  git status
+   15  git commit -m "Updating site"
+   16    git config --global user.email "you@example.com"
+   17    git config --global user.name "Your Name"
+   18  git commit -m "Updating site"
+   19  git log
+   20  git push fine
+   21  history
+   22  cd docks
+   23  cd docs
+   24  ls
+   25  cd ..
+   26  ls
+   27  history > history.txt
